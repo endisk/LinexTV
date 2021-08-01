@@ -52,7 +52,7 @@
 				console.log("running ok");
 				$("#enableFlash").html("<video id='my-video' class='video-js'></video>");
 				
-				var str = "TV";
+				var str = "Linex";
 				
 				var player = videojs('my-video',{
 				    width: '640px',
@@ -60,7 +60,7 @@
 				    controls: true,
 				    'autoplay': true,
 				    sources: [{
-				        src: 'rtmp://127.0.0.1/live/' + str,
+				        src: 'rtmp://192.168.3.4/live/' + str,
 				        type: 'rtmp/flv'
 				    }]
 			 	},function(){
